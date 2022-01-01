@@ -1,0 +1,121 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <mat-accordion>
+                <mat-expansion-panel class="mb-3" [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Directives
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Definition/Types
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>Basically Directive are elements which change the <span class="text-primary">structure ,behavior
+                            or appereance </span> of the Dom elements.</p>
+                    <h4 class="text-primary">Types Of Directive </h4>
+                    <p>
+                        There are four types of directives in Angular.</p>
+                    <mat-list>
+                        <mat-list-item>Structural directives</mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>Attribute directives</mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>Components Directives</mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>Custom Directive</mat-list-item>
+                    </mat-list>
+                    <mat-action-row>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Structural Directives
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Example
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>Structural directive change the structure of the DOM by <span class="text-primary">adding or
+                            removing </span> elements.</p>
+                    <p>It's denote by <span class="text-danger">*</span>Sign. </p>
+                    <p>Like - *ngIf ,*ngFor, *ngSwitch</p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Attribute Directives
+                        </mat-panel-title>
+                        <mat-panel-description>
+                          Example
+                        </mat-panel-description>
+                      
+                    </mat-expansion-panel-header>
+                    <p>
+                        Attribute directiv basically perform the apperence of DOM elements or Components.
+                    </p>
+                    <p>
+                        Like- ngStyle,ngClass
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Components Directives
+                        </mat-panel-title>
+                        <mat-panel-description>
+                        Example
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>
+                        Component directives are based on component. Actually, each component can be used as directive. Component provides @Input and @Output decorator to send and receive information between parent and child components.
+                    </p>
+                    <p>
+                        Like- @Input
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 4" (opened)="setStep(4)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Custom Directives
+                        </mat-panel-title>
+                        <mat-panel-description>
+                          Example
+                        </mat-panel-description>
+                      
+                    </mat-expansion-panel-header>
+                    <p>
+                        Angular provides option to extend the angular directive with user defined directives and it is called Custom directives. 
+                    </p>
+                    <p>
+                        Command to create custom directive -> <span class="text-danger">ng generate directive customstyle </span>
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">End</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+            <button mat-button color="primary" (click)="goToDashboard()">Go to Dashboard</button>
+        </div>
+    </div>
+</div>

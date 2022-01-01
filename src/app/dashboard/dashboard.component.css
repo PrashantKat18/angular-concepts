@@ -1,0 +1,9 @@
+/* mat-card {
+} */
+
+mat-card:hover {
+    background-color: rgb(99, 133, 245);
+    cursor: pointer;
+    color: #ffff;
+
+}

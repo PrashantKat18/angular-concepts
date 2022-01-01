@@ -1,0 +1,188 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <mat-accordion>
+                <mat-expansion-panel class="mb-3" [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Pipes
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Definition/Types
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>Pipes are basically used for transform data and manage data with in interpolation
+                        {{this.interploation}} denoted by {{this.interploation1}} separted by symbol. Its accepts data
+                        ,arrary ,integers and string.</p>
+                    <h4 class="text-primary">Types of Pipes </h4>
+                    <p>
+                        There are different types of Pipes in Angular.</p>
+                    <mat-list>
+                        <mat-list-item>Async Pipe</mat-list-item>
+                        <p>One-way data binding basically work component to view.</p>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>Date Pipe</mat-list-item>
+                        <p>Two-way data binding basically work component to view and view to component.</p>
+                        <mat-list-item>Slice Pipe</mat-list-item>
+                        <p>One-way data binding basically work component to view.</p>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>Lower Case Pipe</mat-list-item>
+                        <p>Two-way data binding basically work component to view and view to component.</p>
+                        <mat-list-item>Json Pipe</mat-list-item>
+                        <p>One-way data binding basically work component to view.</p>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>Currency Pipe</mat-list-item>
+                        <p>Two-way data binding basically work component to view and view to component.</p>
+                        <mat-list-item>Title case Pipe</mat-list-item>
+                        <p>Two-way data binding basically work component to view and view to component.</p>
+                    </mat-list>
+
+                    <mat-action-row>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            String interpolation
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            one-way data binding
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>String interpolation is the process of formatting or manipulating strings. In Angular,
+                        Interpolation is
+                        used to display data from component to view (DOM). It is denoted by the expression of
+                        {{interploation }}</p>
+                    <p>It's denote by <span class="text-danger">{{interploation}}</span>Sign. </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Event Binding
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            one-way data binding
+                        </mat-panel-description>
+
+                    </mat-expansion-panel-header>
+                    <p>
+                        Events are actions like mouse click, double click, hover or any keyboard and mouse actions. </p>
+                    <p>
+                        Like- <span class="text-danger">onClick() ,mouseover(), </span>
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 3" (opened)="setStep(3)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Property binding
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            One way data binding
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>
+                        Property binding is used to bind the data from property of a component to DOM elements. It is
+                        denoted by [].
+                    </p>
+                    <p>
+                        its denoted by [] (square brackets)
+                    </p>
+                    <p>
+                        example - we can bind img as propert & button disabled or unabled
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 4" (opened)="setStep(4)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Class Binding
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            One way data binding
+                        </mat-panel-description>
+
+                    </mat-expansion-panel-header>
+                    <p>
+                        Class binding is used to bind the data from component to HTML class property. The syntax is as
+                        follows −
+                    </p>
+                    <p>
+                        Command to create custom directive -> <span class="text-danger">ng generate directive
+                            customstyle </span>
+                    </p>
+                    <p>
+                        like - HTMLTag [class]="component variable holding class name" HTMLTag
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 5" (opened)="setStep(5)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Style Binding
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            One way data binding
+                        </mat-panel-description>
+
+                    </mat-expansion-panel-header>
+                    <p>
+                        Style binding is used to bind the data from component into HTML style property.
+                    </p>
+                    <p>
+                        like - HTMLTag [style.STYLE]="component data"
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">Next</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel class="mb-3" [expanded]="step === 6" (opened)="setStep(6)" hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Two-way data binding
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            Two way data binding
+                        </mat-panel-description>
+
+                    </mat-expansion-panel-header>
+                    <p>
+                        Two-way data binding basically work both ways (component to view and view to component).
+                    </p>
+                    <p>
+                        like - Simple example ngmodel . If you do any changes in your property (or model) then, it
+                        reflects in your
+                        view and vice versa. It is the combination of property and event binding.
+                    </p>
+                    <mat-action-row>
+                        <button mat-button color="warn" (click)="prevStep()">Previous</button>
+                        <button mat-button color="primary" (click)="nextStep()">End</button>
+                    </mat-action-row>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+            <button mat-button color="primary" (click)="goToDashboard()">Go to Dashboard</button>
+        </div>
+    </div>
+</div>
